@@ -20,7 +20,7 @@ chance_of_rain = weather_data.select('td[headers="header4"]')
 for i in range(0, len(chance_of_rain)):
     chance_of_rain[i] = chance_of_rain[i].getText()
 
-for x in range(0,13):
+for x in range(13):
 
     if chance_of_rain[x] =='Nil':
         nilCount += 1
